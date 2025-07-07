@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step Academy - Курсы</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-green">Step</span>
+                <span class="logo-white">Academy</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="courses.html" class="active">Курсы</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <a href="contacts.html" class="btn">Записаться</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Наши курсы</h1>
+                <nav class="breadcrumbs">
+                    <a href="index.html">Главная</a> / <span>Курсы</span>
+                </nav>
+            </div>
+        </section>
+
+        <section class="courses-section">
+            <div class="container">
+                <div class="filters">
+                    <button class="filter-btn active">Все</button>
+                    <button class="filter-btn">IT</button>
+                    <button class="filter-btn">Дизайн</button>
+                    <button class="filter-btn">Маркетинг</button>
+                </div>
+
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div class="course-badge">Топ</div>
+                        <div class="course-image"></div>
+                        <div class="course-info">
+                            <h3>Веб-разработка</h3>
+                            <p class="course-description">Полный курс по созданию современных веб-приложений с нуля до профессионального уровня.</p>
+                            <div class="course-meta">
+                                <span class="duration">⏱ 6 месяцев</span>
+                                <span class="price">💵 40 000 руб.</span>
+                            </div>
+                            <div class="course-details">
+                                <p><strong>Преподаватель:</strong> Иванов А.П.</p>
+                                <p><strong>Начало:</strong> Каждый месяц</p>
+                            </div>
+                            <a href="contacts.html" class="btn btn-small">Записаться</a>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-image"></div>
+                        <div class="course-info">
+                            <h3>Графический дизайн</h3>
+                            <p class="course-description">Основы дизайна и работа с профессиональными инструментами для создания визуального контента.</p>
+                            <div class="course-meta">
+                                <span class="duration">⏱ 4 месяца</span>
+                                <span class="price">💵 35 000 руб.</span>
+                            </div>
+                            <div class="course-details">
+                                <p><strong>Преподаватель:</strong> Смирнова М.В.</p>
+                                <p><strong>Начало:</strong> Каждый месяц</p>
+                            </div>
+                            <a href="contacts.html" class="btn btn-small">Записаться</a>
+                        </div>
+                    </div>
+
+                    <!-- Остальные курсы аналогично -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <!-- Такой же как в index.html -->
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

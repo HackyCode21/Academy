@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step Academy - Контакты</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-green">Step</span>
+                <span class="logo-white">Academy</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="courses.html">Курсы</a></li>
+                    <li><a href="contacts.html" class="active">Контакты</a></li>
+                </ul>
+            </nav>
+            <a href="contacts.html" class="btn">Записаться</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Контакты</h1>
+                <nav class="breadcrumbs">
+                    <a href="index.html">Главная</a> / <span>Контакты</span>
+                </nav>
+            </div>
+        </section>
+
+        <section class="contacts-section">
+            <div class="container">
+                <div class="contacts-grid">
+                    <div class="contacts-info">
+                        <h2>Как нас найти</h2>
+                        <div class="contact-item">
+                            <h3>Адрес</h3>
+                            <p>г. Москва, ул. Образцова, д. 25</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>Телефон</h3>
+                            <p>+7 (495) 123-45-67</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>Email</h3>
+                            <p>info@stepacademy.ru</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>Режим работы</h3>
+                            <p>Пн-Пт: 9:00-18:00</p>
+                            <p>Сб-Вс: выходной</p>
+                        </div>
+                    </div>
+
+                    <div class="contacts-form">
+                        <h2>Оставьте заявку</h2>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Ваше имя</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Ваш email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Телефон</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="course">Интересующий курс</label>
+                                <select id="course" name="course">
+                                    <option value="">Выберите курс</option>
+                                    <option value="web">Веб-разработка</option>
+                                    <option value="design">Графический дизайн</option>
+                                    <option value="data">Data Science</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Сообщение</label>
+                                <textarea id="message" name="message" rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <p>Локация болады</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <!-- Такой же как в index.html -->
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
