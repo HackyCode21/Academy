@@ -8,6 +8,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Простая CAPTCHA Modal -->
+    <div id="captcha-modal" class="modal">
+        <div class="modal-content">
+            <h3>Подтвердите, что вы не робот</h3>
+            <p>Попытка <span id="attempt-counter">1/3</span></p>
+            <div id="captcha-question" class="captcha-question"></div>
+            <input type="text" id="captcha-answer" placeholder="Введите ответ" autofocus>
+            <button id="verify-captcha" class="btn">Подтвердить</button>
+        </div>
+    </div>
+    <!-- Остальная часть вашего HTML (шапка, контент, подвал) -->
+    <!-- ... -->
+
+    <script src="js/script.js"></script>
+</body>
+</html>
     <!-- Шапка сайта -->
     <header class="header">
         <div class="container">
@@ -76,10 +92,10 @@
                         <div class="course-badge">Топ</div>
                         <div class="course-image"></div>
                         <div class="course-info">
-                            <h3>Веб-разработка</h3>
+                            <h3>Python Basic</h3>
                             <div class="course-meta">
-                                <span class="duration">6 месяцев</span>
-                                <span class="price">40 000 руб.</span>
+                                <span class="duration">3 месяцев</span>
+                                <span class="price">300.000 сум.</span>
                             </div>
                             <a href="courses.html" class="btn btn-small">Подробнее</a>
                         </div>
@@ -89,8 +105,8 @@
                         <div class="course-info">
                             <h3>Графический дизайн</h3>
                             <div class="course-meta">
-                                <span class="duration">4 месяца</span>
-                                <span class="price">35 000 руб.</span>
+                                <span class="duration">3 месяца</span>
+                                <span class="price">300.000 сум.</span>
                             </div>
                             <a href="courses.html" class="btn btn-small">Подробнее</a>
                         </div>
@@ -98,10 +114,10 @@
                     <div class="course-card">
                         <div class="course-image"></div>
                         <div class="course-info">
-                            <h3>Data Science</h3>
+                            <h3>Telegram Bot</h3>
                             <div class="course-meta">
-                                <span class="duration">8 месяцев</span>
-                                <span class="price">60 000 руб.</span>
+                                <span class="duration">1 месяцев</span>
+                                <span class="price">300.000 cум.</span>
                             </div>
                             <a href="courses.html" class="btn btn-small">Подробнее</a>
                         </div>
@@ -136,7 +152,7 @@
                 </div>
                 <div class="footer-col">
                     <h4>Контакты</h4>
-                    <p>г.Нукус, улыца А.Шамуратова 148</p>
+                    <p>г.Нукус, улица А.Шамуратова 148</p>
                     <p>+998 (77) 109-20-05</p>
                     <p>info@stepacademy.uz</p>
                 </div>
@@ -149,4 +165,4 @@
 
     <script src="js/script.js"></script>
 </body>
-</html> 
+</html>
